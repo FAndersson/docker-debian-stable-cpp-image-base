@@ -1,6 +1,6 @@
 # Docker image containing generic tools for C++ development, based on base development image for Debian stable.
 
-FROM fredrikandersson/debian-stable-dev-image-base:stretch-2018-09-18
+FROM fredrikandersson/debian-stable-dev-image-base
 
 # Basic build/development tools
 RUN apt-get update --quiet --yes && apt-get install --quiet --yes cmake make valgrind python python3 python-pip python3-pip
