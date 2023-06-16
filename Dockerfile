@@ -9,4 +9,4 @@ RUN apt-get update --quiet --yes && apt-get install --quiet --yes doxygen doxyge
 # Pybind11
 RUN apt-get update --quiet --yes && apt-get install --quiet --yes pybind11-dev python3-pybind11
 # Conan package manager
-RUN pip install conan
+RUN pip install --break-system-packages conan
