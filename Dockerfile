@@ -5,7 +5,7 @@ FROM fredrikandersson/debian-stable-dev-image-base:2024-07-01
 
 # Basic build/development tools
 RUN apt-get update --quiet --yes && apt-get install --quiet --yes \
-    cmake cppcheck make ninja-build python3 python3-pip valgrind ccache
+    ccache cmake cppcheck make ninja-build python3 python3-pip valgrind
 # Doxygen
 RUN apt-get update --quiet --yes && apt-get install --quiet --yes \
     doxygen doxygen-latex graphviz
